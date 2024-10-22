@@ -1,3 +1,103 @@
+:root {
+    --default-font-weight: "Montserrat", sans-serif;
+    --second-font-weight:   "Fraunces", serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+
 h1 {
-    color: aqua;
+    font-family: var(--second-font-weight);
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 35px;
+}
+
+p {
+    font-family: var(--default-font-weight);
+    color: hsl(228, 12%, 48%);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+.hero {
+ max-width: 375px;
+ display: grid;
+ grid-template-columns: 1fr;
+ border-radius: 10px;
+ background-color: hsl(0, 0%, 100%);
+ overflow: hidden;
+}
+
+.container {
+    padding: 20px;
+}
+
+.img-fluid {
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+.section-one {
+    font-family: var(--default-font-weight);
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.price-container {
+    display: flex;
+    align-items: center; /* Centers items vertically */
+}
+
+.number-one {
+    color: hsl(158, 36%, 37%);
+    font-weight: 600;
+    font-size: 38px;
+    font-family: var(--second-font-weight);
+    margin-right: 10px;
+}
+
+.number-two {
+    color: hsl(228, 12%, 48%);
+    font-size: 15px;
+    font-weight: 500;
+    padding: 10px;
+    text-decoration: line-through;
+    margin-top: 6px;
+}
+
+.btn-branding {
+    font-family: var(--default-font-weight);
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 10px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(158, 36%, 37%);
+    padding: 15px 105px;
+}
+
+.btn-branding i {
+    padding-right: 5px;
+}
+
+
+
+@media (min-width: 768px){
+    .hero {
+       grid-template-columns: 1fr 1fr;
+       max-width: 768px;
+    }
+    .container {
+        padding: 32px;
+    }
+   
 }
